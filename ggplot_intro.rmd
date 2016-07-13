@@ -1,0 +1,30 @@
+---
+title: "GGplot intro"
+author: "Ben"
+date: "13 July 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+#Plan
+
+Here we're going to load some packages;
+
+Then run some bits using GGPLOT
+
+
+#Load libraries
+```{r}
+library(dplyr)
+library(gapminder)
+library(ggplot2) #install.packages("ggplot2")
+```
+
+
+```{r, echo=FALSE}
+
+```
+
