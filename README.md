@@ -1,2 +1,4 @@
 # myproject
-repo for software carpentry - day 2 -afternoon session
+repo for software carpentry - 
+
+hello its me
