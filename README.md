@@ -1,4 +1,6 @@
-Playing with [Software Carpentry at Oxford](http://jule32.github.io/2016-07-12-Oxford).
+_Playing with [Software Carpentry at Oxford]_ 
+
+(http://jule32.github.io/2016-07-12-Oxford).
 
 ## Introduction
 
@@ -13,4 +15,3 @@ This repository demonstrates **software** and _formats_:
 
 ![](https://octodex.github.com/images/labtocat.png)
 
-> Hello?
