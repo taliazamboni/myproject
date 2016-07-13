@@ -3,6 +3,7 @@ title: "My first markdown"
 author: "Ben"
 date: "13 July 2016"
 output: html_document
+sansfont:Calibri Light  
 ---
 
 ```{r setup, include=FALSE}

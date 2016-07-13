@@ -93,3 +93,30 @@ b <- ggplot(g, aes(x = continent, y = lifeExp)) +
 
 b
 ```
+
+#Making a GoogleVis figure
+
+```{r, results='asis'}
+
+suppressPackageStartupMessages({
+  library(googleVis) # install.packages('googleVis')
+})                               
+   
+op <- options(gvis.plot.tag='chart')
+
+m = gvisMotionChart(
+  gapminder %>%
+    mutate(
+      pop_m = pop / 1e6,
+      log_gdpPercap = log(gdpPercap)), 
+  idvar='country', 
+  timevar='year', 
+  xvar='log_gdpPercap', 
+  yvar='lifeExp', 
+  colorvar='continent',
+  sizevar='pop_m')
+plot(m)                            
+
+
+```
+
