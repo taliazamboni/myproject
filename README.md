@@ -1,6 +1,8 @@
 _Playing with [Software Carpentry at Oxford]_ 
 
-(http://jule32.github.io/2016-07-12-Oxford).
+_Here's a link to the plots I'm making from this data_
+
+https://benjevans.github.io/myproject/ggplot_intro
 
 ## Introduction
 
@@ -11,7 +13,7 @@ This repository demonstrates **software** and _formats_:
 1. _Markdown_
 1. _Rmarkdown_
 
-## Conclusion
 
-![](https://octodex.github.com/images/labtocat.png)
+
+
 
