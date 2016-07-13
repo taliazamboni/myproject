@@ -1,4 +1,4 @@
 # myproject
 repo for software carpentry - 
 
-hello its me
+# hello its me
