@@ -21,10 +21,75 @@ Then run some bits using GGPLOT
 library(dplyr)
 library(gapminder)
 library(ggplot2) #install.packages("ggplot2")
+
+## subsetting data now
+
+g <- gapminder %>% 
+  filter(year == 2007) %>% 
+  mutate(pop_m = pop/1e6)
+
 ```
 
+# My first plot
 
-```{r, echo=FALSE}
+This is a simple geom_point
+```{r}
+
+#ggplot needs (data, aes(whats x, whats y)) + what_kind_of_plot()
+s <- ggplot(g, aes(x = gdpPercap, y = lifeExp)) +
+              geom_point()
+s
 
 ```
 
+#My second plot
+
+This will be a simple geom_point with points related to size
+Following this, a plot with colours related to continent
+
+```{r}
+
+#ggplot needs (data, aes(whats x, whats y)) + what_kind_of_plot()
+s2 = s + aes(size = pop_m)
+
+s2
+
+s3 = s2 + aes(colour = continent)
+
+s3
+
+```
+
+# Pipey McPipeface
+
+```{r}
+
+#ggplot needs (data, aes(whats x, whats y)) + what_kind_of_plot()
+s <- ggplot(g, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point() +
+  aes(size = pop_m) +
+  aes(colour = continent) +
+  ggtitle("Healthy McWealthface") + 
+  xlab("GDP per capita ($/year)") +
+  ylab("Life expectancy (years)") +
+  scale_colour_discrete('Continent') +
+  scale_size_continuous('Population (M)') 
+
+s  
+```
+
+#Boxplot time
+
+```{r}
+
+b <- ggplot(g, aes(x = continent, y = lifeExp)) +
+  geom_boxplot() +
+  
+  aes(fill = continent) +
+  ggtitle("Boxy McPlotface") + 
+  xlab("Continent") +
+  ylab("Life expectancy (years)")+
+  theme(legend.position = "none")
+
+b
+```
