@@ -86,7 +86,7 @@ b <- ggplot(g, aes(x = continent, y = lifeExp)) +
   geom_boxplot() +
   
   aes(fill = continent) +
-  ggtitle("Boxy McPlotface") + 
+  ggtitle("Plotty McBoxface") + 
   xlab("Continent") +
   ylab("Life expectancy (years)")+
   theme(legend.position = "none")
